@@ -1,0 +1,61 @@
+This is my review of the Google Cybersecurity course from Coursera. 
+
+I finished the certifcate this past month and while it's still fresh on my mind, figure I'd get it out there into the world. 
+
+Overall, I found the course to be high quality. Well worth the price. I'm a Coursera Plus member, so it was included in the ~$62/month fee. 
+
+Each course was taught by an employee at Google. It is video format, but includes notes after each topic and a Glossary at the end of each Module and Course. 
+
+There are labs and other interactive activities to complete. Some were boring, others were at least entertaining. 
+
+They also give you a few portfolio excercises. 
+
+My tips for success:
+This really isn't a hard course, but if you are completely new to IT, it's suggest using a note taking app such as OneNote or Obsidian. 
+I try to document as much as I can, even if the information is not new. If anything, it adds reinforcement. 
+
+Do the excercises, don't just try to fool it into completion. Again, reinforcement of what you are learning. 
+
+They do breeze over things, again, this is an Intro or foundational course, so if you don't quite understand something...GOOGLE IT! 
+
+It is comprised of 8 Courses. Here are the courses and some of the topics within each:
+
+Course 1: Foundations
+  -Frameworks
+  -Types of attacks
+  -Tools
+
+Course 2: Managing Risks
+  -Playbooks
+  -OWASP
+  -SIEM Tools
+
+Course 3: Networking
+  -OSI
+  -TCP/IP
+  -Subnetting and CIDR
+
+Course 4: Linux and SQL (I found the SQL portion very good)
+  -Intro to Linux
+  -Intro to SQL
+
+Course 5: Assets, Threats, and Vulnerabilites
+  -Encryption
+  -Defending against threats
+  -Malware
+
+Course 6: Detection and Response (also a very good course)
+  - SIEM tools and packet analysis
+  - Reading logs
+  - Suricata
+
+Course 7: Python (intro level)
+  - Data types, conditionals, loops
+  - Functions and strings
+  - Debugging
+
+Course 8: Get the Job
+  -Effective communication
+  -Engage the community
+  -Finding and applying to jobs
+
