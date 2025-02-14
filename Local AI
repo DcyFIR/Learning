@@ -1,0 +1,55 @@
+I created a local AI instance using Linux, Docker, and Ollama.
+This is a brief overview of it. 
+
+First, I used my personal Windows machine. I have WSL with Ubuntu installed already. 
+If you need a guide on that, maybe I'll do one later, but it's incredibly simple to do and run. 
+
+Once that was on, I opened my terminal and installed Ollama. 
+You can find that download here: https://ollama.com/download
+Note: You don't NEED Linux, they do have a Windows version, I just prefer Linux. 
+
+Now, add a model. 
+In Linux: ollama run llama3.2
+The run command will download Llama3.2 if you don't already have it. 
+Once it installs, it will open. 
+Great!
+You could be done here, but I'm going a step further. You can add a clean UI with Open WebUI.
+The UI will make it look like your using ChatGPT or Gemini. 
+We'll do this with Docker.
+
+Type /bye into the model to close out or open a new terminal, your choice.
+
+Now for Docker. 
+
+Here is what you'll run in Terminal:
+This gets the GPG Key for Docker
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+Add the repository:
+echo \
+"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+$(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+
+Now install Docker:
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+Now time to kick it off:
+docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+
+Now you have Open WebUI!
+
+With Ollama running, open it up. 
+http://localhost:8080/
+
+If you want another way to verify Ollama is running, go here: http://localhost:11434/
+All it will say is that it's running. 
+
+Now have fun. To add more models, just go here and look for one that interests you, like maybe DeepSeek. 
+https://ollama.com/search
+
